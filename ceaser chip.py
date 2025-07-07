@@ -7,8 +7,7 @@ def caesar_cipher_encrypt(text, shift):
             shifted = (ord(char) - start + shift) % 26 + start
             result += chr(shifted)
         else:
-            result += char  # keep non-alphabet characters unchanged
-
+            result += char  
     return result
 
 def caesar_cipher_decrypt(text, shift):
